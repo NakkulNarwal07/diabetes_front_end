@@ -28,7 +28,7 @@ export default function Home() {
       ? "bg-[radial-gradient(circle_at_center,_rgba(127,29,29,0.95)_0%,_rgba(153,27,27,0.82)_28%,_rgba(69,10,10,0.9)_55%,_rgba(17,24,39,0.98)_100%)]"
       : "bg-[radial-gradient(circle_at_center,_rgba(20,83,45,0.95)_0%,_rgba(22,101,52,0.82)_28%,_rgba(6,95,70,0.9)_55%,_rgba(17,24,39,0.98)_100%)]";
 
-  const statusText = !result ? "Glucose Risk Estimator" : isDiabetic ? "Diabetic" : "Not diabetic ";
+  const statusText = !result ? "diabetis Risk Estimator" : isDiabetic ? "Diabetic" : "Not diabetic ";
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -105,7 +105,7 @@ setTimeout(() => setFlashState(null), 1400);
     <div className="min-h-screen flex items-center justify-center bg-[radial-gradient(circle_at_top,_#111827_0%,_#030712_55%,_#000000_100%)] px-4 py-10">
       <form
         onSubmit={handleSubmit}
-        className={`relative w-full max-w-lg overflow-hidden rounded-3xl border border-white/10 ${formBgClass} shadow-[0_0_80px_rgba(0,0,0,0.45)] backdrop-blur-xl p-8 md:p-10 space-y-5 transition-all duration-700 ease-out`}
+        className={`relative w-full  max-w-lg overflow-hidden rounded-3xl border border-white/10 ${formBgClass} shadow-[0_0_80px_rgba(0,0,0,0.45)] backdrop-blur-xl p-8 md:p-10 space-y-5 transition-all duration-700 ease-out`}
       >
           <div
     className={`pointer-events-none absolute inset-0 transition-all duration-700 ${
@@ -126,7 +126,7 @@ setTimeout(() => setFlashState(null), 1400);
               {statusText}
             </h2>
             <p className="mt-2 text-sm text-white/65">
-              Enter your details to estimate the glucose risk.
+              Enter your details to estimate the diabetis risk.
             </p>
           </div>
 
