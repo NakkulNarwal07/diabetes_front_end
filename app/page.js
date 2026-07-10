@@ -28,7 +28,7 @@ export default function Home() {
       ? "bg-[radial-gradient(circle_at_center,_rgba(127,29,29,0.95)_0%,_rgba(153,27,27,0.82)_28%,_rgba(69,10,10,0.9)_55%,_rgba(17,24,39,0.98)_100%)]"
       : "bg-[radial-gradient(circle_at_center,_rgba(20,83,45,0.95)_0%,_rgba(22,101,52,0.82)_28%,_rgba(6,95,70,0.9)_55%,_rgba(17,24,39,0.98)_100%)]";
 
-  const statusText = !result ? "Glucose Risk Estimator" : isDiabetic ? "Diabetic" : "Not diabetic";
+  const statusText = !result ? "Glucose Risk Estimator" : isDiabetic ? "Diabetic" : "Not diabetic ";
 
   const handleSubmit = async (e) => {
     e.preventDefault();
