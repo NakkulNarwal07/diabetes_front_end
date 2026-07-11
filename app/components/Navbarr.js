@@ -8,8 +8,8 @@ const Navbarr = () => {
 
   const links = [
     { href: "/", label: "Home" },
-    { href: "/developer", label: "Developer" },
-    { href: "/about", label: "About" },
+    { href: "/dev", label: "Developer" },
+    { href: "/docs", label: "Docs" },
   ];
 
   return (
