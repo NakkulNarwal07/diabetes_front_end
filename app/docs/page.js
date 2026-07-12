@@ -14,8 +14,9 @@ export default function Page() {
             This project is a machine learning model that predicts whether a
             person has diabetes, based on a dataset from{" "}
             
-              <a href="https://www.kaggle.com"
+              <a href="https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database"
               className="text-teal-400 hover:text-teal-300 underline underline-offset-2"
+              target="_blank"
             >
               Kaggle
             </a>

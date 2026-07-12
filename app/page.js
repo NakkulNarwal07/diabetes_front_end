@@ -382,7 +382,7 @@ function PimaForm() {
         Age: ageValue,
       };
 
-      const response = await fetch(`http://127.0.0.1:5000/predict_diabetes_pima`, {
+      const response = await fetch(`https://diabetesbackend-production.up.railway.app/predict_diabetes_pima`, {
         method: "POST",
         headers: {
           "x-api-key": process.env.NEXT_PUBLIC_AUTH_KEY,
@@ -551,7 +551,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-[radial-gradient(circle_at_top,_#111827_0%,_#030712_55%,_#000000_100%)] px-4 py-10 gap-6">
-      <div className="flex gap-2 rounded-full border mt-8 border-white/10 bg-black/25 p-1 backdrop-blur-xl">
+      {/* <div className="flex gap-2 rounded-full border mt-8 border-white/10 bg-black/25 p-1 backdrop-blur-xl">
         <button
           type="button"
           onClick={() => setActiveTab("standard")}
@@ -574,9 +574,9 @@ export default function Home() {
         >
           PIMA
         </button>
-      </div>
+      </div> */}
 
-      {activeTab === "standard" ? <StandardForm /> : <PimaForm />}
+      {activeTab === "Pima" ? <StandardForm /> : <PimaForm />}
 
       <style jsx global>{`
         @keyframes flashGreen {
