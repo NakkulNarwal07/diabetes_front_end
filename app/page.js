@@ -72,7 +72,7 @@ function StandardForm() {
         heart_disease: heartDisease === "yes" ? 1 : 0,
       };
 
-      const response = await fetch(`http://127.0.0.1:5000/predict_diabetes`, {
+      const response = await fetch(`https://diabetesbackend-production.up.railway.app/predict_diabetes`, {
         method: "POST",
         headers: {
           "x-api-key": process.env.NEXT_PUBLIC_AUTH_KEY,

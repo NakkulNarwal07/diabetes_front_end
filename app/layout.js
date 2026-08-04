@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Diabetes Prediction App",
-  description: "Developed by Nandani",
+  description: "Developed by Nandini",
 };
 
 export default function RootLayout({ children }) {
