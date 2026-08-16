@@ -72,7 +72,7 @@ function StandardForm() {
         heart_disease: heartDisease === "yes" ? 1 : 0,
       };
 
-      const response = await fetch(`http://localhost:5000/predict_diabetes`, {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/predict_diabetes`, {
         method: "POST",
         headers: {
           "x-api-key": process.env.NEXT_PUBLIC_AUTH_KEY,
@@ -382,7 +382,7 @@ function PimaForm() {
         Age: ageValue,
       };
 
-      const response = await fetch(`http://localhost:5000/predict_diabetes_pima`, {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/predict_diabetes_pima`, {
         method: "POST",
         headers: {
           "x-api-key": process.env.NEXT_PUBLIC_AUTH_KEY,
